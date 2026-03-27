@@ -18,8 +18,8 @@ export default function Home() {
         <About />
         <Contact />
       </main>
-      <footer className="bg-forest-dark py-8 px-6 text-center">
-        <p className="text-cream/40 text-sm">
+      <footer className="bg-navy-dark py-8 px-6 text-center">
+        <p className="text-warm/30 text-sm">
           © {new Date().getFullYear()} Scott Griffiths Consulting
         </p>
       </footer>

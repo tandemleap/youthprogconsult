@@ -1,6 +1,7 @@
 const steps = [
   {
     number: '01',
+    color: 'text-sky border-sky/40 bg-sky/15',
     title: 'Free Zoom Consult',
     subtitle: 'No charge. No pitch.',
     description:
@@ -9,6 +10,7 @@ const steps = [
   },
   {
     number: '02',
+    color: 'text-amber border-amber/40 bg-amber/15',
     title: 'Diagnostic Intensive',
     subtitle: 'Paid · Zoom · 1–2 days',
     description:
@@ -22,6 +24,7 @@ const steps = [
   },
   {
     number: '03',
+    color: 'text-coral border-coral/40 bg-coral/15',
     title: 'On-Site Intensive',
     subtitle: 'Paid · In person · 1–3 days',
     description:
@@ -37,65 +40,77 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="process" className="bg-forest py-24 px-6">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="font-serif text-3xl md:text-4xl text-cream mb-4">How it works</h2>
-        <p className="text-cream/60 text-lg mb-16 max-w-2xl">
+    <section id="process" className="bg-navy py-24 px-6 relative overflow-hidden">
+      {/* Background blobs */}
+      <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-sky/5 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-coral/5 blur-3xl pointer-events-none" />
+
+      <div className="relative max-w-5xl mx-auto">
+        <h2 className="font-serif text-3xl md:text-4xl text-warm mb-4">How it works</h2>
+        <p className="text-warm/55 text-lg mb-16 max-w-2xl">
           Three ways to engage, starting with a free conversation.
         </p>
-        <div className="space-y-0">
-          {steps.map((step, i) => (
+
+        {/* Steps — visual flow */}
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
+          {steps.map((step) => (
             <div
               key={step.number}
-              className={`flex flex-col md:flex-row gap-8 py-12 ${
-                i < steps.length - 1 ? 'border-b border-cream/10' : ''
-              }`}
+              className="bg-navy-light/40 border border-warm/10 rounded-3xl p-8 flex flex-col"
             >
-              <div className="md:w-24 shrink-0">
-                <span className="font-serif text-5xl text-rust/50 font-bold leading-none">
-                  {step.number}
-                </span>
+              <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl border-2 font-serif text-2xl font-bold mb-6 ${step.color}`}>
+                {step.number}
               </div>
-              <div className="flex-1">
-                <h3 className="font-serif text-2xl text-cream mb-1">{step.title}</h3>
-                <p className="text-rust text-sm font-medium uppercase tracking-wide mb-4">
-                  {step.subtitle}
-                </p>
-                <p className="text-cream/75 leading-relaxed mb-4">{step.description}</p>
-                {step.items.length > 0 && (
-                  <ul className="space-y-2.5">
-                    {step.items.map((item) => (
-                      <li key={item} className="flex items-start gap-3 text-cream/65">
-                        <span className="text-rust mt-0.5 shrink-0">▸</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
+              <h3 className="font-serif text-xl text-warm mb-1">{step.title}</h3>
+              <p className="text-xs font-semibold uppercase tracking-widest mb-4 opacity-60" style={{ color: 'inherit' }}>
+                <span className={step.color.split(' ')[0]}>{step.subtitle}</span>
+              </p>
+              <p className="text-warm/65 leading-relaxed text-sm mb-4 flex-1">{step.description}</p>
+              {step.items.length > 0 && (
+                <ul className="space-y-2 mt-2">
+                  {step.items.map((item) => (
+                    <li key={item} className="flex items-start gap-2.5 text-warm/55 text-sm">
+                      <span className={`mt-1 shrink-0 ${step.color.split(' ')[0]}`}>▸</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
         </div>
 
-        <div className="mt-4 border border-cream/15 rounded-lg p-8">
-          <div className="flex flex-col md:flex-row gap-8">
-            <div className="md:w-24 shrink-0">
-              <span className="font-serif text-3xl text-cream/25 italic">+</span>
-            </div>
-            <div>
-              <h3 className="font-serif text-xl text-cream mb-1">
-                Implementation & Stabilization
-              </h3>
-              <p className="text-rust text-sm font-medium uppercase tracking-wide mb-3">
-                Optional ongoing support
-              </p>
-              <p className="text-cream/65 leading-relaxed">
-                Ongoing support to implement recommendations, train staff, and keep things
-                moving. Scoped case-by-case based on what your organization actually needs.
-              </p>
-            </div>
+        {/* Optional add-on */}
+        <div className="border border-warm/15 rounded-3xl p-8 flex flex-col md:flex-row gap-6 items-start">
+          <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl border-2 border-warm/20 text-warm/30 font-serif text-3xl shrink-0">
+            +
+          </div>
+          <div>
+            <h3 className="font-serif text-xl text-warm mb-1">Implementation & Stabilization</h3>
+            <p className="text-xs font-semibold uppercase tracking-widest text-warm/40 mb-3">
+              Optional ongoing support
+            </p>
+            <p className="text-warm/60 leading-relaxed">
+              Ongoing support to implement recommendations, train staff, and keep things moving.
+              Scoped case-by-case based on what your organization actually needs.
+            </p>
           </div>
         </div>
+      </div>
+
+      {/* Wave transition */}
+      <div className="absolute bottom-0 left-0 right-0 overflow-hidden pointer-events-none">
+        <svg
+          viewBox="0 0 1440 64"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          className="w-full h-12 md:h-16 block"
+        >
+          <path
+            d="M0,30 C360,64 720,4 1080,34 C1260,50 1380,28 1440,32 L1440,64 L0,64 Z"
+            fill="#E0F0F8"
+          />
+        </svg>
       </div>
     </section>
   )
