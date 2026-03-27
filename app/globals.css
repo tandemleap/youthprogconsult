@@ -8,6 +8,6 @@ html {
 
 @layer base {
   body {
-    @apply bg-cream text-forest antialiased;
+    @apply bg-warm text-navy antialiased;
   }
 }
