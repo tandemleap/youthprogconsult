@@ -5,11 +5,13 @@ import HowItWorks from '@/components/HowItWorks'
 import WhoThisIsFor from '@/components/WhoThisIsFor'
 import About from '@/components/About'
 import Contact from '@/components/Contact'
+import VersionSwitcher from '@/components/VersionSwitcher'
 
 export default function Home() {
   return (
     <>
       <Nav />
+      <VersionSwitcher current="v1" />
       <main>
         <Hero />
         <WhatIHelpWith />

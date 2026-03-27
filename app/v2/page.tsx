@@ -19,6 +19,7 @@
 // =============================================================================
 
 import NavV2 from '@/components/v2/NavV2'
+import VersionSwitcher from '@/components/VersionSwitcher'
 import HeroV2 from '@/components/v2/HeroV2'
 import PainV2 from '@/components/v2/PainV2'
 import ServicesV2 from '@/components/v2/ServicesV2'
@@ -38,6 +39,7 @@ export default function HomeV2() {
   return (
     <>
       <NavV2 />
+      <VersionSwitcher current="v2" />
       <main>
         {/* 1. Hero: sharpened value prop and named pain points */}
         <HeroV2 />
