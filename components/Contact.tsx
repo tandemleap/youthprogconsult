@@ -33,55 +33,49 @@ export default function Contact() {
   }
 
   const field =
-    'w-full border border-warm-darker bg-warm rounded-xl px-4 py-3 text-navy placeholder:text-navy/30 focus:outline-none focus:ring-2 focus:ring-coral/30 focus:border-coral transition'
+    'w-full border border-cream-dark bg-white rounded px-4 py-3 text-forest placeholder:text-forest/30 focus:outline-none focus:ring-2 focus:ring-rust/30 focus:border-rust transition'
 
   return (
-    <section id="contact" className="bg-navy py-24 px-6 relative overflow-hidden">
-      {/* Blobs */}
-      <div className="absolute top-0 left-1/4 w-80 h-80 rounded-full bg-coral/8 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-64 h-64 rounded-full bg-sky/8 blur-3xl pointer-events-none" />
-
-      <div className="relative max-w-5xl mx-auto">
+    <section id="contact" className="bg-cream py-24 px-6">
+      <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Left column */}
           <div>
-            <h2 className="font-serif text-3xl md:text-4xl text-warm mb-4">Let's talk</h2>
-            <p className="text-warm/60 text-lg mb-10 leading-relaxed">
+            <h2 className="font-serif text-3xl md:text-4xl text-forest mb-4">
+              Let's talk
+            </h2>
+            <p className="text-forest/65 text-lg mb-10 leading-relaxed">
               The first conversation is free. Tell me a bit about what's going on and we'll
               find 30 minutes to talk it through.
             </p>
-            <div className="bg-navy-light/50 border border-warm/15 rounded-2xl p-6">
-              <p className="text-warm/40 text-xs uppercase tracking-widest font-medium mb-2">
+            <div className="bg-cream-dark rounded-lg p-6">
+              <p className="text-forest/50 text-xs uppercase tracking-widest font-medium mb-2">
                 Book directly
               </p>
               <a
                 href="https://calendly.com/scottgriffiths"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-serif text-xl text-warm hover:text-sky-light transition-colors"
+                className="font-serif text-xl text-forest hover:text-rust transition-colors"
               >
                 Schedule a free consult →
               </a>
-              <p className="text-warm/35 text-sm mt-1">Opens Calendly</p>
+              <p className="text-forest/40 text-sm mt-1">Opens Calendly</p>
             </div>
           </div>
 
           {/* Right column — form */}
           <div>
             {status === 'success' ? (
-              <div className="border border-warm/15 rounded-3xl p-10 text-center">
-                <div className="w-14 h-14 rounded-full bg-sky/20 border border-sky/30 flex items-center justify-center mx-auto mb-4">
-                  <svg width="24" height="20" viewBox="0 0 24 20" fill="none">
-                    <path d="M2 10l7 7L22 2" stroke="#88BFDC" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </div>
-                <h3 className="font-serif text-xl text-warm mb-2">Got it, thanks.</h3>
-                <p className="text-warm/50">I'll be in touch within a day or two.</p>
+              <div className="border border-forest/15 rounded-lg p-10 text-center">
+                <p className="text-3xl mb-4">✓</p>
+                <h3 className="font-serif text-xl text-forest mb-2">Got it, thanks.</h3>
+                <p className="text-forest/60">I'll be in touch within a day or two.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-warm/60 mb-1.5">
+                  <label htmlFor="name" className="block text-sm font-medium text-forest/65 mb-1.5">
                     Your name
                   </label>
                   <input
@@ -95,7 +89,7 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="org" className="block text-sm font-medium text-warm/60 mb-1.5">
+                  <label htmlFor="org" className="block text-sm font-medium text-forest/65 mb-1.5">
                     Organization
                   </label>
                   <input
@@ -109,7 +103,7 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-warm/60 mb-1.5">
+                  <label htmlFor="email" className="block text-sm font-medium text-forest/65 mb-1.5">
                     Email
                   </label>
                   <input
@@ -123,7 +117,7 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-warm/60 mb-1.5">
+                  <label htmlFor="message" className="block text-sm font-medium text-forest/65 mb-1.5">
                     What's working? What hurts?
                   </label>
                   <textarea
@@ -136,14 +130,14 @@ export default function Contact() {
                   />
                 </div>
                 {status === 'error' && (
-                  <p className="text-coral-light text-sm">
+                  <p className="text-rust text-sm">
                     Something went wrong — try again or email directly.
                   </p>
                 )}
                 <button
                   type="submit"
                   disabled={status === 'submitting'}
-                  className="w-full bg-coral hover:bg-coral-dark disabled:opacity-50 text-white py-4 rounded-xl font-medium text-lg transition-all hover:-translate-y-0.5"
+                  className="w-full bg-rust hover:bg-rust-dark disabled:opacity-50 text-white py-4 rounded font-medium text-lg transition-colors"
                 >
                   {status === 'submitting' ? 'Sending…' : 'Send it'}
                 </button>
