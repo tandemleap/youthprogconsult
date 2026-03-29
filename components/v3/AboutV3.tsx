@@ -1,8 +1,7 @@
 // V3 ABOUT / CREDIBILITY
 // Two-column asymmetric layout: text left (3 cols), photo right (2 cols).
-// Uses the new headshot: /scott-headshot-v3.jpg
+// Uses the new headshot: /Scott-Headshot-Morocco.png
 // Pull quote with coral left border, set apart from body text.
-// Photo: scott-headshot-v3.jpg — save the provided image to public/scott-headshot-v3.jpg
 
 export default function AboutV3() {
   return (
@@ -54,9 +53,8 @@ export default function AboutV3() {
             <div className="relative">
               {/* Decorative offset bg */}
               <div className="absolute inset-0 rounded-3xl bg-coral/15 rotate-2 transform" />
-              {/* New headshot — save provided image to public/scott-headshot-v3.jpg */}
               <img
-                src="/scott-headshot-v3.jpg"
+                src="/Scott-Headshot-Morocco.png"
                 alt="Scott Griffiths"
                 className="relative rounded-3xl w-full object-cover object-top shadow-xl"
               />
