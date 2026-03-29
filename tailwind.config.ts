@@ -38,10 +38,23 @@ const config: Config = {
           dark: '#F0EDE6',
           darker: '#E4DFD8',
         },
+        // V3 color palette — forest green dominant, terracotta accent
+        forest: {
+          DEFAULT: '#1E3A2F',
+          light: '#2D5544',
+          dark: '#0F211A',
+        },
+        terra: {
+          DEFAULT: '#C4521A',
+          dark: '#9E3E10',
+          light: '#D9784A',
+        },
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
         serif: ['var(--font-lora)', 'Georgia', 'serif'],
+        // V3 body font — DM Sans (humanist sans, warm editorial feel)
+        'dm-sans': ['var(--font-dm-sans)', 'system-ui', 'sans-serif'],
       },
     },
   },
