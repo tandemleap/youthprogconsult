@@ -17,7 +17,7 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: 'Scott Griffiths | Youth-Serving Program Consulting',
   description:
-    'Diagnostic and systems-building consulting for grant-funded youth-serving organizations. Working with EDs and Program Directors to find root causes, not just symptoms.',
+    'Helping youth-serving programs build belonging-centered culture, staff capacity, and outcomes systems — so the kids who need it most keep showing up.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

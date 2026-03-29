@@ -28,7 +28,7 @@ export default function Nav() {
           href="#contact"
           className="bg-rust hover:bg-rust-dark text-white px-5 py-2 rounded text-sm font-medium transition-colors"
         >
-          Book a Free Consult
+          Apply for a Fit Call
         </a>
       </div>
     </nav>

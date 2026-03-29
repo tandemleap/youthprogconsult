@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="bg-forest py-24 px-6">
+    <section id="about" className="bg-cream py-24 px-6">
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-5 gap-12 items-start">
 
@@ -18,29 +18,37 @@ export default function About() {
 
           {/* Text */}
           <div className="md:col-span-3">
-            <h2 className="font-serif text-3xl md:text-4xl text-cream mb-10">About Scott</h2>
-            <div className="space-y-5 text-cream/75 text-lg leading-relaxed">
+            <p className="text-rust font-medium text-sm uppercase tracking-widest mb-6">
+              About
+            </p>
+            <h2 className="font-serif text-3xl md:text-4xl text-forest mb-8">
+              I didn't learn this in a workshop. I built it with real teenagers in a real program.
+            </h2>
+            <div className="space-y-5 text-forest/75 text-lg leading-relaxed">
               <p>
-                I ran SPARK — a youth-serving program in Ashland, WI — for years. I know what it's
-                like to be the person responsible for grant reports who also had to lead
-                afterschool, supervise staff, manage community relationships, and keep the
-                lights on.
+                I'm the Program Director of SPARK, a healing-centered afterschool program in
+                northern Wisconsin serving teenagers — including a lot of teenagers that other
+                systems have already given up on. Youth with attendance issues. Youth with school
+                discipline records. Youth who have every reason not to come back.
+              </p>
+              <p className="font-serif text-xl text-forest italic">
+                They keep coming back.
               </p>
               <p>
-                The consulting work I do now comes from that experience — not from a framework
-                I read in a book, not from theory. I've built the systems I recommend. I've
-                done the data pulls I'm asking you to simplify. I've had the conversations
-                with funders that require you to actually know your numbers.
+                Not because of our curriculum. Because of the context we've built — deliberately,
+                over years — with the staff practices, the culture, and the data systems to back it up.
               </p>
               <p>
-                I work with organizations because I genuinely believe good youth-serving programs
-                are worth preserving — and too many of them are struggling with back-end systems
-                that weren't built to support the front-end work.
+                I also convene a cross-sector youth coalition, write and manage grants across
+                multiple funding streams, and build the data infrastructure that keeps programs
+                accountable without burying staff in compliance work. I understand how these
+                programs are funded — how to braid funding streams together, how to avoid
+                supplantation, how to tell a story that funders believe because it's actually true.
               </p>
               <p>
-                What I bring isn't a methodology. It's practitioner credibility, a
-                systems-builder mindset, and enough distance from your day-to-day to see
-                what you can't see when you're inside it.
+                Most consultants hand you a framework. I help you build the whole thing —
+                culture, practices, data systems, and reporting — in a way your funders will
+                believe because it's actually true.
               </p>
             </div>
           </div>

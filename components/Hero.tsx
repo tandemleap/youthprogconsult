@@ -9,19 +9,21 @@ export default function Hero() {
             <p className="text-rust font-medium text-sm uppercase tracking-widest mb-6">
               Youth-Serving Program Consulting
             </p>
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-cream leading-snug mb-8 max-w-4xl">
-              Tell me what's working. Tell me what hurts. We'll find what's actually
-              driving both — and build from there.
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-cream leading-snug mb-8 max-w-2xl">
+              Running a youth program is the most rewarding and challenging work that you may
+              ever have the privilege to do.
             </h1>
-            <p className="text-cream/75 text-lg md:text-xl max-w-2xl mb-12 leading-relaxed">
-              I work with youth-serving organizations to find the real root causes inside their
-              programs — not just the symptoms showing up in spreadsheets and grant reports.
+            <p className="text-cream/75 text-xl md:text-2xl mb-4 leading-relaxed font-serif italic">
+              You don't have to carry the weight of it alone.
+            </p>
+            <p className="text-cream/75 text-xl md:text-2xl mb-12 font-serif">
+              I can help.
             </p>
             <a
-              href="#contact"
+              href="#apply"
               className="inline-block bg-rust hover:bg-rust-dark text-white px-8 py-4 rounded text-lg font-medium transition-colors"
             >
-              Book a Free Consult
+              Apply for a Fit Call →
             </a>
           </div>
 
