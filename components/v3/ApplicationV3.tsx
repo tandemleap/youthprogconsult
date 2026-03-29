@@ -5,11 +5,11 @@
 
 export default function ApplicationV3() {
   return (
-    <section id="apply-gate" className="bg-forest py-28 px-6 relative overflow-hidden">
+    <section id="apply-gate" className="bg-navy py-28 px-6 relative overflow-hidden">
       {/* Background texture */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-80 h-80 rounded-full bg-forest-light/25 blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-64 h-64 rounded-full bg-terra/8 blur-3xl" />
+        <div className="absolute top-0 left-1/4 w-80 h-80 rounded-full bg-navy-light/25 blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-64 h-64 rounded-full bg-coral/8 blur-3xl" />
       </div>
 
       <div className="relative max-w-2xl mx-auto text-center">
@@ -41,7 +41,7 @@ export default function ApplicationV3() {
         {/* Primary CTA */}
         <a
           href="/apply"
-          className="inline-flex items-center gap-2 bg-terra hover:bg-terra-dark text-white px-10 py-5 rounded-2xl text-xl font-medium font-dm-sans transition-all shadow-lg shadow-terra/25 hover:-translate-y-0.5 mb-4"
+          className="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white px-10 py-5 rounded-2xl text-xl font-medium font-dm-sans transition-all shadow-lg shadow-coral/25 hover:-translate-y-0.5 mb-4"
         >
           Apply for a Fit Call
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">

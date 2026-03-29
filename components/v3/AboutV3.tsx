@@ -1,7 +1,7 @@
 // V3 ABOUT / CREDIBILITY
 // Two-column asymmetric layout: text left (3 cols), photo right (2 cols).
 // Uses the new headshot: /scott-headshot-v3.jpg
-// Pull quote with terra left border, set apart from body text.
+// Pull quote with coral left border, set apart from body text.
 // Photo: scott-headshot-v3.jpg — save the provided image to public/scott-headshot-v3.jpg
 
 export default function AboutV3() {
@@ -12,11 +12,11 @@ export default function AboutV3() {
 
           {/* Text — left, wider column */}
           <div className="md:col-span-3 order-2 md:order-1">
-            <h2 className="font-serif text-3xl md:text-4xl text-forest mb-8 leading-snug">
+            <h2 className="font-serif text-3xl md:text-4xl text-navy mb-8 leading-snug">
               I didn't learn this in a workshop. I built it with real teenagers in a real program.
             </h2>
 
-            <div className="space-y-5 font-dm-sans text-lg text-forest/70 leading-relaxed mb-10">
+            <div className="space-y-5 font-dm-sans text-lg text-navy/70 leading-relaxed mb-10">
               <p>
                 I'm the Program Director of SPARK, a healing-centered afterschool program in
                 northern Wisconsin serving teenagers — including a lot of teenagers that other
@@ -39,9 +39,9 @@ export default function AboutV3() {
               </p>
             </div>
 
-            {/* Pull quote — terra left border, prominent type */}
-            <blockquote className="border-l-4 border-terra pl-6 py-1">
-              <p className="font-serif text-xl md:text-2xl text-forest leading-snug">
+            {/* Pull quote — coral left border, prominent type */}
+            <blockquote className="border-l-4 border-coral pl-6 py-1">
+              <p className="font-serif text-xl md:text-2xl text-navy leading-snug">
                 "Most consultants hand you a framework. I help you build the whole thing —
                 culture, practices, data systems, and reporting — in a way your funders will
                 believe because it's actually true."
@@ -53,7 +53,7 @@ export default function AboutV3() {
           <div className="md:col-span-2 order-1 md:order-2">
             <div className="relative">
               {/* Decorative offset bg */}
-              <div className="absolute inset-0 rounded-3xl bg-terra/15 rotate-2 transform" />
+              <div className="absolute inset-0 rounded-3xl bg-coral/15 rotate-2 transform" />
               {/* New headshot — save provided image to public/scott-headshot-v3.jpg */}
               <img
                 src="/scott-headshot-v3.jpg"

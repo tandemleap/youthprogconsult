@@ -23,13 +23,13 @@ export default function ReframeV3() {
       <div className="max-w-3xl mx-auto">
 
         {/* Heading */}
-        <h2 className="font-serif text-3xl md:text-4xl text-forest leading-snug mb-10">
+        <h2 className="font-serif text-3xl md:text-4xl text-navy leading-snug mb-10">
           Belonging isn't a buzzword. It's only a buzzword when it lives in your grant report
           but not in your program.
         </h2>
 
         {/* Body */}
-        <div className="space-y-5 font-dm-sans text-lg text-forest/70 leading-relaxed mb-16">
+        <div className="space-y-5 font-dm-sans text-lg text-navy/70 leading-relaxed mb-16">
           <p>
             When belonging is real — when a teenager who's been suspended three times this
             semester still shows up to your program on a Tuesday — everything else follows.
@@ -44,23 +44,23 @@ export default function ReframeV3() {
             When kids genuinely feel like they belong, everything else gets easier. The question
             is how to build that deliberately — and how to prove it.
           </p>
-          <p className="font-semibold text-forest/80">That's the work.</p>
+          <p className="font-semibold text-navy/80">That's the work.</p>
         </div>
 
         {/* Comparison cards */}
         <div>
-          <p className="font-dm-sans text-sm font-semibold uppercase tracking-widest text-forest/40 mb-6 text-center">
+          <p className="font-dm-sans text-sm font-semibold uppercase tracking-widest text-navy/40 mb-6 text-center">
             The difference isn't effort. It's focus.
           </p>
           <div className="grid sm:grid-cols-2 gap-4">
 
             {/* Content Focus */}
-            <div className="border border-forest/15 rounded-2xl p-7 bg-warm-dark">
-              <h3 className="font-serif text-xl text-forest/60 mb-5">Content Focus</h3>
+            <div className="border border-navy/15 rounded-2xl p-7 bg-warm-dark">
+              <h3 className="font-serif text-xl text-navy/60 mb-5">Content Focus</h3>
               <ul className="space-y-3">
                 {contentFocus.map((item) => (
-                  <li key={item} className="flex items-start gap-3 font-dm-sans text-forest/55">
-                    <span className="mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-forest/25" />
+                  <li key={item} className="flex items-start gap-3 font-dm-sans text-navy/55">
+                    <span className="mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-navy/25" />
                     {item}
                   </li>
                 ))}
@@ -68,12 +68,12 @@ export default function ReframeV3() {
             </div>
 
             {/* Context Focus — accented */}
-            <div className="border border-terra/25 rounded-2xl p-7 bg-terra/5">
-              <h3 className="font-serif text-xl text-terra mb-5">Context Focus</h3>
+            <div className="border border-coral/25 rounded-2xl p-7 bg-coral/5">
+              <h3 className="font-serif text-xl text-coral mb-5">Context Focus</h3>
               <ul className="space-y-3">
                 {contextFocus.map((item) => (
-                  <li key={item} className="flex items-start gap-3 font-dm-sans text-forest/75">
-                    <span className="mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-terra" />
+                  <li key={item} className="flex items-start gap-3 font-dm-sans text-navy/75">
+                    <span className="mt-2 shrink-0 w-1.5 h-1.5 rounded-full bg-coral" />
                     {item}
                   </li>
                 ))}

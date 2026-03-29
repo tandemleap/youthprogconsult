@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function Apply() {
   return (
-    <main className="min-h-screen bg-forest flex items-center justify-center px-6 py-24">
+    <main className="min-h-screen bg-navy flex items-center justify-center px-6 py-24">
       <div className="max-w-xl w-full text-center">
 
         {/* Back link */}
@@ -33,7 +33,7 @@ export default function Apply() {
         </p>
 
         {/* Form embed placeholder */}
-        <div className="w-full min-h-64 rounded-2xl border border-warm/10 bg-forest-light/30 flex flex-col items-center justify-center gap-3 p-10">
+        <div className="w-full min-h-64 rounded-2xl border border-warm/10 bg-navy-light/30 flex flex-col items-center justify-center gap-3 p-10">
           <p className="font-dm-sans text-warm/35 text-sm italic">
             Application form — embed Fillout or Qualtrics form here
           </p>

@@ -2,8 +2,8 @@
 // Forest green background, light text.
 // Three pillar cards (A / B / C) in a row with a connector diagram below.
 // Optional add-ons in a two-column list.
-// Investment inset box (slightly lighter forest bg).
-// CTA: "Apply for a Fit Call" (terra).
+// Investment inset box (slightly lighter navy bg).
+// CTA: "Apply for a Fit Call" (coral).
 
 const pillars = [
   {
@@ -36,10 +36,10 @@ const addOns = [
 
 export default function OfferV3() {
   return (
-    <section id="offer" className="bg-forest py-28 px-6 relative overflow-hidden">
+    <section id="offer" className="bg-navy py-28 px-6 relative overflow-hidden">
       {/* Background texture */}
-      <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-forest-light/20 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-terra/5 blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-navy-light/20 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-coral/5 blur-3xl pointer-events-none" />
 
       <div className="relative max-w-5xl mx-auto">
 
@@ -62,10 +62,10 @@ export default function OfferV3() {
           {pillars.map((pillar) => (
             <div
               key={pillar.label}
-              className="bg-forest-light/40 border border-warm/10 rounded-3xl p-8 flex flex-col"
+              className="bg-navy-light/40 border border-warm/10 rounded-3xl p-8 flex flex-col"
             >
               {/* Label */}
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl border-2 border-terra/50 text-terra font-serif text-2xl font-bold mb-6">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl border-2 border-coral/50 text-coral font-serif text-2xl font-bold mb-6">
                 {pillar.label}
               </div>
               <h3 className="font-serif text-lg text-warm mb-4 leading-snug">{pillar.title}</h3>
@@ -79,14 +79,14 @@ export default function OfferV3() {
           {pillars.map((pillar, i) => (
             <div key={pillar.label} className="flex items-center gap-3">
               <div className="flex flex-col items-center gap-1.5">
-                <span className="font-serif text-xl font-bold text-terra">{pillar.label}</span>
+                <span className="font-serif text-xl font-bold text-coral">{pillar.label}</span>
                 <span className="font-dm-sans text-warm/40 text-xs text-center max-w-[80px] hidden sm:block leading-tight">
                   {pillar.title.split(' ').slice(0, 2).join(' ')}
                 </span>
               </div>
               {i < pillars.length - 1 && (
                 <svg width="32" height="16" viewBox="0 0 32 16" fill="none" className="shrink-0">
-                  <path d="M0 8h28M22 2l6 6-6 6" stroke="#C4521A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M0 8h28M22 2l6 6-6 6" stroke="#E8523A" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               )}
             </div>
@@ -102,7 +102,7 @@ export default function OfferV3() {
           <div className="grid sm:grid-cols-2 gap-3">
             {addOns.map((item) => (
               <div key={item} className="flex items-start gap-3 font-dm-sans text-warm/60 text-sm">
-                <span className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-terra/60" />
+                <span className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-coral/60" />
                 {item}
               </div>
             ))}
@@ -110,7 +110,7 @@ export default function OfferV3() {
         </div>
 
         {/* Investment box */}
-        <div className="bg-forest-light/30 border border-warm/10 rounded-2xl p-8 mb-10">
+        <div className="bg-navy-light/30 border border-warm/10 rounded-2xl p-8 mb-10">
           <h3 className="font-serif text-xl text-warm mb-3">Investment</h3>
           <p className="font-dm-sans text-warm/70 leading-relaxed mb-3">
             Engagements are scoped to fit your program's size, complexity, and needs. Investment
@@ -127,7 +127,7 @@ export default function OfferV3() {
         <div className="text-center">
           <a
             href="/apply"
-            className="inline-flex items-center gap-2 bg-terra hover:bg-terra-dark text-white px-10 py-4 rounded-2xl text-lg font-medium font-dm-sans transition-all shadow-lg shadow-terra/20 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white px-10 py-4 rounded-2xl text-lg font-medium font-dm-sans transition-all shadow-lg shadow-coral/20 hover:-translate-y-0.5"
           >
             Apply for a Fit Call
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none">

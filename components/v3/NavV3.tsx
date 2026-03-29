@@ -1,6 +1,6 @@
 // V3 NAV
 // New structure: logo left, "What You'll Get" text link + "Apply for a Fit Call" button right.
-// Becomes forest green on scroll (transparent over hero, which is also forest green).
+// Becomes navy green on scroll (transparent over hero, which is also navy green).
 // Mobile: hamburger toggles a full-width drawer.
 
 'use client'
@@ -19,7 +19,7 @@ export default function NavV3() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-forest/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+        scrolled ? 'bg-navy/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
       }`}
     >
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -38,7 +38,7 @@ export default function NavV3() {
           </a>
           <a
             href="/apply"
-            className="bg-terra hover:bg-terra-dark text-white px-5 py-2 rounded-xl text-sm font-medium transition-colors font-dm-sans"
+            className="bg-coral hover:bg-coral-dark text-white px-5 py-2 rounded-xl text-sm font-medium transition-colors font-dm-sans"
           >
             Apply for a Fit Call
           </a>
@@ -64,7 +64,7 @@ export default function NavV3() {
 
       {/* Mobile drawer */}
       {open && (
-        <div className="md:hidden bg-forest-dark border-t border-warm/10 px-6 py-5 flex flex-col gap-4">
+        <div className="md:hidden bg-navy-dark border-t border-warm/10 px-6 py-5 flex flex-col gap-4">
           <a
             href="#offer"
             onClick={() => setOpen(false)}
@@ -75,7 +75,7 @@ export default function NavV3() {
           <a
             href="/apply"
             onClick={() => setOpen(false)}
-            className="bg-terra hover:bg-terra-dark text-white px-5 py-3 rounded-xl text-sm font-medium text-center transition-colors font-dm-sans"
+            className="bg-coral hover:bg-coral-dark text-white px-5 py-3 rounded-xl text-sm font-medium text-center transition-colors font-dm-sans"
           >
             Apply for a Fit Call
           </a>

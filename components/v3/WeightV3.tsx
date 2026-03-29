@@ -9,7 +9,7 @@ export default function WeightV3() {
       <div className="max-w-2xl mx-auto">
 
         {/* Body — no heading, opens directly */}
-        <div className="space-y-6 font-dm-sans text-lg text-forest/75 leading-relaxed">
+        <div className="space-y-6 font-dm-sans text-lg text-navy/75 leading-relaxed">
           <p>
             You know what you signed up for. You also know nobody fully prepared you for what
             it actually takes.
@@ -30,15 +30,15 @@ export default function WeightV3() {
             consistently, without placing a burden on the staff who should be focused on serving
             youth. Keeping the funding coming. Keeping the doors open. Keeping it fun.
           </p>
-          <p className="font-semibold text-forest/60">Carrying all of it.</p>
+          <p className="font-semibold text-navy/60">Carrying all of it.</p>
         </div>
 
         {/* Closing lines — larger, set apart, given weight */}
-        <div className="mt-14 pt-10 border-t border-forest/10 space-y-2">
-          <p className="font-serif text-2xl md:text-3xl text-forest leading-snug">
+        <div className="mt-14 pt-10 border-t border-navy/10 space-y-2">
+          <p className="font-serif text-2xl md:text-3xl text-navy leading-snug">
             Most people outside this work don't understand what that costs.
           </p>
-          <p className="font-serif text-2xl md:text-3xl text-terra leading-snug">
+          <p className="font-serif text-2xl md:text-3xl text-coral leading-snug">
             The ones doing it well rarely get told they're doing it well.
           </p>
         </div>

@@ -15,7 +15,7 @@ export default function PainV3() {
       <div className="max-w-3xl mx-auto">
 
         {/* Intro */}
-        <p className="font-dm-sans text-lg text-forest/60 mb-16">
+        <p className="font-dm-sans text-lg text-navy/60 mb-16">
           If you're honest with yourself, at least one of these is louder than the others right now:
         </p>
 
@@ -25,10 +25,10 @@ export default function PainV3() {
             <div key={i} className="flex items-start gap-6">
               {/* Accent marker */}
               <div className="shrink-0 mt-2">
-                <div className="w-1 h-12 bg-terra rounded-full" />
+                <div className="w-1 h-12 bg-coral rounded-full" />
               </div>
               {/* Quote */}
-              <p className="font-serif text-2xl md:text-3xl text-forest italic leading-snug">
+              <p className="font-serif text-2xl md:text-3xl text-navy italic leading-snug">
                 {pain}
               </p>
             </div>
@@ -36,7 +36,7 @@ export default function PainV3() {
         </div>
 
         {/* Closing line */}
-        <p className="font-dm-sans text-lg text-forest/65 mt-16 max-w-xl">
+        <p className="font-dm-sans text-lg text-navy/65 mt-16 max-w-xl">
           Maybe it's all three. Either way, the fix isn't a new curriculum.
         </p>
 

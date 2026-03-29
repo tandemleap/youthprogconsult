@@ -3,12 +3,12 @@
 // Route: /v3
 // =============================================================================
 // Purpose: New design direction testing a different positioning, voice, and
-// visual identity (forest green palette, DM Sans body font, editorial layout).
+// visual identity (navy green palette, DM Sans body font, editorial layout).
 //
 // The existing homepage at / (V1) and /v2 are completely untouched.
 //
 // What's new in V3 vs V1/V2:
-//   - Entirely new color system: forest green dominant, terracotta accent
+//   - Entirely new color system: navy green dominant, coralcotta accent
 //   - DM Sans body font (humanist sans) via /v3/layout.tsx — does not affect V1/V2
 //   - New hero: headline-first, no photo, two CTAs
 //   - New "Weight" section: opens mid-thought with no heading, prose-only
@@ -73,7 +73,7 @@ export default function HomeV3() {
         <ApplicationV3 />
       </main>
 
-      <footer className="bg-forest-dark py-8 px-6">
+      <footer className="bg-navy-dark py-8 px-6">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-dm-sans text-warm/30 text-sm">
             © {new Date().getFullYear()} Scott Griffiths Consulting
